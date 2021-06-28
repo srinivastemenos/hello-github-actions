@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
 sh -c "echo Hello world my name is $INPUT_MY_NAME"
-exit 0
+exit 1
