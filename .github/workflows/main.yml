@@ -14,3 +14,4 @@ jobs:
         if:  ${{ success() }}
         with:
           webhook_url: ${{ secrets.MS_WEB_HOOK }}
+          job: ${{ toJson(job) }}
