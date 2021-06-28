@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: skitionek/notify-microsoft-teams@master
-        if: always()
+        if: success()
         with:
           webhook_url: ${{ secrets.MS_WEB_HOOK }}
       - uses: ./action-a
